@@ -10,10 +10,3 @@ RUN apt-get update && apt-get -y install pkg-config libxml2-dev libxmlsec1-dev l
 # Install required python modules
 RUN pip install -r requirements.txt
 
-#RUN mv /entrypoint.sh /uwsgi-nginx-docker-entrypoint.sh
-#COPY entrypoint.sh /entrypoint.sh
-#RUN chmod +x /entrypoint.sh
-
-#ENTRYPOINT ["/entrypoint.sh"]
-
-#CMD ["/start.sh"]
